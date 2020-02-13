@@ -3,6 +3,48 @@
 	margin: 0px;
 	padding: 0px;
 }
+body{
+	width: 100%;
+}
 h1{
 	color: red;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	text-align: center;
+	color: gray;
+}
+
+a>h2:hover{
+	color: black;
+}
+/* Trang index */
+.product{
+	width: 20%;
+	border: 2px solid gray;
+	float: left;
+	margin: auto;
+}
+.product img{
+	width: 100%;
+	max-width: 300px;
+}
+/* ket thuc trang index */
+/* trang san pham */
+.product-img{
+	width: 40%;
+	border: 1px solid gray;
+	float: left;
+}
+.product-img img{
+	width: 100%;
+	max-width: 500px;
+}
+.product-detail{
+	width: 60%;
+	border: 1px solid gray;
+	padding-left: 20px;
+	font-size: 36px;
+	float: left;
 }
