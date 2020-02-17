@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Phần 3, thực hành 2</title>
+	<style type="text/css" media="screen">
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		.box1{
+			width: 60%;
+			height: 400px;
+			background-color: red;
+			float: left;
+			border-right: 15px solid white;
+			position: relative;
+		}
+		.box2, .box3{
+			width: 40%;
+			height: 200px;
+			float: left;
+			position: relative;
+		}
+		.box2{
+			background-color: green;
+		}
+		.box3{
+			background-color: blue;
+		}
+		.box1 h1, .box2 h1, .box3 h1{
+			color: white;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<h1>Height 400px</h1>
+	</div>
+	<div class="box2">
+		<h1>Height 200px</h1>
+	</div>
+	<div class="box3">
+		<h1>Height 200px</h1>
+	</div>
+</body>
+</html>
