@@ -1,0 +1,64 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+/* Phan banner */
+.banner{
+	text-align: center;
+	font-size: 32px;
+	width: 100%;
+	background-color: #628797;
+	padding: 40px;
+	color: white;
+}
+/* phan menu */
+.menu{
+	width: 100%;
+	background-color: #5675b1;
+	padding: 10px;
+}
+.menu a{
+	color: white;
+	font-size: 18px;
+	margin: 15px;
+}
+.menu a:hover{
+	color: #95a09c;
+}
+/* phan album */
+.album{
+	width: 33.3%;
+	margin-top: 10px;
+	padding-left: 1px;
+	background-color: #78e8d4;
+	float: left;
+}
+.album img{
+	width: 100%;
+}
+.album .album_title{
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+.album img:hover{
+	border-radius: 10%;
+}
+.album .album_title:hover{
+	color: #95a09c;
+}
+/* phan footer */
+.footer{
+	margin-top: 10px;
+	text-align: center;
+	font-size: 32px;
+	width: 100%;
+	background-color: #628797;
+	padding: 40px;
+	color: white;
+	float: left;
+}
