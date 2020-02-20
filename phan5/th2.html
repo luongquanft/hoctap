@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Menu đa cấp Ngang</title>
+	<title>Menu đa cấp dọc</title>
 	<style type="text/css" media="screen">
 		*{
 			box-sizing: border-box;
@@ -16,22 +16,29 @@
 		a{
 			text-decoration: none;
 			color: #32323d;
-			font-size: 18px;
+			font-size: 20px;
+		}
+		/* xem them */
+		.more{
+			position: absolute;
+			top: 10px;
+			right: 10px;
 		}
 		/* menu */
 		.menu{
-			padding-left: 10%;
+			width: 150px;
+			height: 900px;
 			background-color: #efefefcf;
 			box-shadow: 2px 2px 6px #b5b1b1;
 		}
 		/* menu cap 1 */
 		.menu-l1 > li{
-			display: inline-block;
+			display: block;
 			position: relative;
 		}
 		.menu-l1 > li >a{
 			display: block;
-			padding: 10px 30px;
+			padding: 10px ;
 		}
 		.menu-l1>li:hover{
 			background-color: #c3c3c3;
@@ -44,8 +51,8 @@
 			width: 150px;
 			background-color: #e0e3e67a;
 			position: absolute;
-			top: 41px;
-			left: 0px;
+			top: 0px;
+			left: 150px;
 			border-bottom-left-radius: 5%;
 			border-bottom-right-radius: 5%;
 			box-shadow: 2px 2px 6px #e2e0e0;
@@ -56,7 +63,7 @@
 		}
 		
 		.menu-l2 >li>a{
-			font-size: 18px;
+			font-size: 20px;
 			display: block;
 			width: 150px;
 			padding: 10px;
@@ -79,20 +86,49 @@
 		.menu-l3 a:hover{
 			background-color: #dedede;
 		}
+		/* menu cap 3 */
+		.menu-l4{
+			position: absolute;
+   	 		top: 0px;
+    		left: 150px;
+    		width: 150px;
+    		background-color: #d8d8d8;
+    		box-shadow: 2px 2px 6px #e2e0e0;
+    		border-top-right-radius: 5%;
+			border-bottom-right-radius: 5%;
+    		display: none !important;
+		}
+		.menu-l4>li>a{
+			font-size: 20px;
+			padding: 10px;
+			display: block;
+		}
+		.menu-l4>li>a:hover{
+			background-color: #efefefcf;
+		}
+		.menu-l2>li:hover .menu-l4{
+			display: block !important;
+		}
 	</style>
 </head>
 <body>
 	<div class="menu">
 		<ul class="menu-l1">
 			<li><a href="" title="">Trang chủ</a></li>
-			<li><a href="" title="">Top 100</a>
+			<li><a href="" title="">Top 100<p class="more">></p></a>
 				<ul class="menu-l2">
-					<li><a href="" title="">Việt Nam</a></li>
+					<li><a href="" title="">Việt Nam<p class="more">></p></a>
+						<ul class="menu-l4">
+							<li><a href="" title="">Nhạc Hot</a></li>
+							<li><a href="" title="">Nhạc Hit</a></li>
+							<li><a href="" title="">Nhạc bất hủ</a></li>
+						</ul>
+					</li>
 					<li><a href="" title="">Âu mỹ</a></li>
 					<li><a href="" title="">Châu á</a></li>
 				</ul>
 			</li>
-			<li><a href="" title="">Chủ đề</a>
+			<li><a href="" title="">Chủ đề<p class="more">></p></a>
 				<ul class="menu-l2 l3">
 					<li class="menu-l3"><h3>Đề xuất</h3>
 						<ul>
@@ -110,14 +146,14 @@
 					</li>
 				</ul>
 			</li>
-			<li><a href="" title="">Album</a>
+			<li><a href="" title="">Album<p class="more">></p></a>
 				<ul class="menu-l2">
 					<li><a href="" title="">Nhạc trẻ</a></li>
 					<li><a href="" title="">Nhạc vàng</a></li>
 					<li><a href="" title="">Nhạc Rap</a></li>
 				</ul>
 			</li>
-			<li><a href="" title="">Nghệ sĩ</a>
+			<li><a href="" title="">Nghệ sĩ<p class="more">></p></a>
 				<ul class="menu-l2">
 					<li><a href="" title="">Việt Nam</a></li>
 					<li><a href="" title="">Châu á</a></li>
